@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu_cart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="connect.shopping.akshay.kmnorth.activities.MenuCartActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="15"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="70"
+            android:gravity="center"
+            android:text="YOUR CART"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="15"
+            android:background="@android:color/transparent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="15"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:text="YOU MAY ALSO LIKE"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="70"
+                android:orientation="vertical"
+                android:background="@color/cardview_light_background">
+
+                <LinearLayout
+                    android:id="@+id/linlaHeaderProgress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <ProgressBar
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/pbHeaderProgress"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+                    </ProgressBar>
+                </LinearLayout>
+
+                <connect.shopping.akshay.kmnorth.CenterLockHorizontalScrollview
+                    android:id="@+id/horizontalScrollView"
+                    android:scrollbars="none"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"></LinearLayout>
+                </connect.shopping.akshay.kmnorth.CenterLockHorizontalScrollview>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="15"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="30"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="75"
+                        android:gravity="center_vertical"
+                        android:padding="3dp"
+                        android:text="ITEMS"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/txtNumMenuItems"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="25"
+                        android:background="@drawable/round_corner_background"
+                        android:gravity="center"
+                        android:text="03"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="70"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:gravity="center_vertical|right"
+                        android:text="Subtotal :  "
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtMenuCartTotal"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30"
+                        android:gravity="center"
+                        android:text="₹ 760"
+                        android:textSize="18dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <ListView
+                android:id="@+id/lstMenuItems"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="80"
+                android:divider="@android:color/transparent"
+                android:scrollIndicators="right"></ListView>
+
+            <Button
+                android:id="@+id/btnProceedToCheckOut"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:layout_weight="20"
+                android:background="@drawable/grey_border_background_white"
+                android:text="PROCEED TO CHECKOUT"
+                android:textAllCaps="true" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

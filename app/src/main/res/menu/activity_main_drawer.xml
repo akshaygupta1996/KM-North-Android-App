@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_action_home"
+        android:title="HOME" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/iconuser"
+        android:title="PROFILE" />
+    <item
+        android:id="@+id/nav_address_book"
+        android:icon="@drawable/iconaddress"
+        android:title="ADDRESS BOOK" />
+    <item
+        android:id="@+id/nav_order_history"
+        android:icon="@drawable/ic_action_order"
+        android:title="ORDER HISTORY" />
+
+    <item
+        android:id="@+id/nav_promo_code"
+        android:icon="@drawable/iconpromo"
+        android:title="PROMO CODES" />
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/ic_action_chat"
+        android:title="CHAT"/>
+
+    <item
+        android:id="@+id/nav_share"
+        android:icon="@drawable/iconshare"
+        android:title="SHARE"/>
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_action_logout"
+        android:title="LOGOUT" />
+
+
+</menu>

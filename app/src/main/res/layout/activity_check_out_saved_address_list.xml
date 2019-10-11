@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#f1eded"
+    android:id="@+id/addressbook3">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:text="ADD NEW ADDRESS"
+        android:id="@+id/btnAddAddress"
+        android:textAlignment="textStart"
+        android:paddingLeft="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingBottom="10dp"
+        android:text="Saved Address"
+        android:textStyle="bold"
+        android:id="@+id/saved_address"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:divider="@android:color/transparent"
+        android:background="@color/cardview_light_background"
+        android:id="@+id/lstSavedAddress"></ListView>
+</LinearLayout>

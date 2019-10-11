@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3f4ed"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="DELIVERY AREA"
+        android:textStyle="bold"
+        android:paddingLeft="15dp"
+        android:textSize="13dp"
+        android:id="@+id/delivery_area"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:background="#D32F2F">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <EditText
+            android:id="@+id/del_area"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:editable="true"
+            android:paddingTop="10dp"
+            android:background="#FFFFFF"
+            android:paddingLeft="15dp"
+            android:textSize="13dp" />
+
+        <Button
+            android:id="@+id/btn_chng"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="#FFFFFF"
+            android:text="CHANGE"
+            android:textSize="13dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#D32F2F">
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="DELIVERY ADDRESS"
+        android:paddingLeft="15dp"
+        android:textStyle="bold"
+        android:textSize="13dp"
+        android:id="@+id/delivery_address"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/complete_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:text="COMPLETE ADDRESS"
+            android:textSize="13dp" />
+
+        <EditText
+            android:id="@+id/edt_complete_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. house number , street name "
+            android:paddingBottom="14dp"
+            android:paddingLeft="15dp"
+            android:textColorHint="#FFA1A1A1"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/insruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:textSize="13dp"
+            android:text="INSTRUCIONS" />
+
+        <EditText
+            android:id="@+id/edt_instruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. beware of dog "
+            android:paddingBottom="14dp"
+            android:paddingLeft="15dp"
+            android:textColorHint="#FFA1A1A1"
+            android:textSize="13dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/saver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/custom_button_new_addr"
+                android:text="    SAVE    "
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

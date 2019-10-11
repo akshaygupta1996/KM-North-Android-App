@@ -1,0 +1,27 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="70"
+        android:text="SGST @ 5%"
+        android:id="@+id/tax_name"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="14dp"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="30"
+        android:gravity="center"
+        android:id="@+id/tax_per"
+        android:text="12"
+        android:textColor="@color/black"
+        android:textAlignment="center"/>
+
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/front"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="30dp"
+        android:background="@color/cardview_light_background"
+        android:layout_weight="0.9">
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/mainscreen"
+            android:alpha="1"
+            android:id="@+id/imageView" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:paddingTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_weight="1"
+            android:alpha="0.9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:textSize="15dp"
+            android:textColor="@color/cardview_light_background" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="15dp"
+            android:textAllCaps="false"
+            android:alpha="0.9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

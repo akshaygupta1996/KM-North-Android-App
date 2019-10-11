@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/front"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="connect.shopping.akshay.kmnorth.activities.LoginActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="15"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="70"
+                android:gravity="center"
+                android:text="Register"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="15"
+                android:background="@android:color/transparent" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/cardview_light_background">
+
+                    <EditText
+                        android:id="@+id/edtRegisterFname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="First Name"
+                        android:inputType="textCapWords"
+                        android:paddingLeft="8dp"
+                        android:background="@null"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="35dp"
+                    android:background="@color/cardview_light_background">
+
+                    <EditText
+                        android:id="@+id/edtRegisterLname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Last Name"
+                        android:background="@null"
+                        android:inputType="textCapWords"
+                        android:paddingLeft="8dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/cardview_light_background"
+                >
+
+                <EditText
+                    android:id="@+id/edtRegisterEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="Email Address"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/cardview_light_background"
+                >
+
+                <EditText
+                    android:id="@+id/edtRegisterPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:paddingLeft="8dp"
+                    android:background="@null"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/cardview_light_background"
+                >
+
+                <EditText
+
+                    android:id="@+id/edtRegisterPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/cardview_light_background"
+                >
+
+                <EditText
+                    android:id="@+id/edtRegisterRPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Re Enter Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="8dp"
+                    android:background="@null"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/cardview_light_background"
+                >
+
+                <EditText
+                    android:id="@+id/edtReferCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Reference Code"
+                    android:inputType="text"
+                    android:paddingLeft="8dp"
+                    android:background="@null"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="30dp"
+                android:alpha="0.9"
+                android:background="@color/colorPrimary"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/cardview_light_background"
+                    android:text="Login"
+                    android:id="@+id/textbtnSignIn"
+                    android:textColor="@color/gray_color"
+                    android:textSize="15dp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

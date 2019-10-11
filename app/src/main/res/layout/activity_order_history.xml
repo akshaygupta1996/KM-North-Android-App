@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_order_history"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="connect.shopping.akshay.kmnorth.activities.OrderHistoryActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/nointernet"
+        android:scaleType="fitXY"
+        android:id="@+id/imgInternet"
+        android:visibility="gone"/>
+    <ListView
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lvOrderHistory"
+        android:scrollbars="none"
+        android:divider="@android:color/transparent"></ListView>
+</RelativeLayout>
